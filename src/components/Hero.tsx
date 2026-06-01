@@ -46,7 +46,7 @@ export default function Hero() {
         {/* Profile row: image + name/title */}
         <div className="flex items-center gap-3">
           <div className="relative h-28 w-28 flex-shrink-0 overflow-hidden rounded-full border-2 border-gray-700 bg-gray-900 shadow-lg transition-transform duration-300 hover:scale-105">
-            <img src="/emad.jpg" alt="Emad Elmontaser" className="h-full w-full object-cover" />
+            <img src="/emad2.png" alt="Emad Elmontaser" className="h-full w-full object-cover" />
           </div>
           <div className="text-sm text-muted">
             <div className="font-semibold text-white">Emad Elmontaser</div>
