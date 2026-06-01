@@ -69,7 +69,7 @@ export default function AboutPage() {
                 Worked as a software developer for <strong className="text-white">Allpac Containers</strong>, building practical software and supporting real business workflows.
               </p>
               <p>
-                My portfolio includes DealFlow, SplitCart, Windsor Parking Helper, and Pathfinding Visualizer — projects focused on full-stack development, product logic, browser tooling, and algorithms.
+                My portfolio includes Client Pipeline Tracker, SplitCart, Windsor Parking Helper, and Pathfinding Visualizer — projects focused on full-stack development, product logic, browser tooling, and algorithms.
               </p>
             </div>
           </div>

@@ -1,10 +1,10 @@
 const projects = [
   {
     slug: 'dealflow',
-    title: 'DealFlow',
+    title: 'Client Pipeline Tracker',
     subtitle: 'CRM for Freelancers',
     description: 'CRM-style dashboard for tracking leads, follow-ups, deal stages, and pipeline value.',
-    longDescription: 'DealFlow helps freelancers manage leads, follow-ups, deal stages, and revenue pipeline without spreadsheets.',
+    longDescription: 'Client Pipeline Tracker helps freelancers manage leads, follow-ups, deal stages, and revenue pipeline without spreadsheets.',
     techStack: ['Next.js', 'TypeScript', 'Supabase', 'PostgreSQL', 'Tailwind CSS'],
     highlights: ['Supabase authentication', 'Lead CRUD workflows', 'Deal pipeline stages', 'Dashboard metrics', 'Follow-up tracking', 'Protected user data'],
     image: '/projects/dealflow/thumbnail.png',
