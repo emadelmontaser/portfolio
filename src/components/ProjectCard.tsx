@@ -27,7 +27,7 @@ export default function ProjectCard({ project }: ProjectCardProps) {
             <h3 className="font-semibold">{project.title}</h3>
             <div className="ml-auto flex items-center gap-2">
               {project.liveDemo ? (
-                <a href={project.liveDemo} target="_blank" rel="noreferrer" className="text-xs px-3 py-1 border border-gray-700 rounded hover:border-accent">Try Now</a>
+                <a href={project.liveDemo} target="_blank" rel="noreferrer" className="text-xs whitespace-nowrap shrink-0 min-w-fit px-3 py-1 border border-gray-700 rounded hover:border-accent">Try Now</a>
               ) : null}
             </div>
           </div>
