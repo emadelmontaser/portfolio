@@ -43,13 +43,6 @@ export default function ProjectPage({ params }: Params) {
               <ProjectVideo url={project.demoVideoUrl} />
             </div>
           ) : null}
-
-          <div className="card">
-            <h2 className="text-xl font-semibold">Technical highlights</h2>
-            <ul className="mt-3 list-inside list-disc text-muted space-y-2">
-              {project.highlights.slice(0,4).map(h => <li key={h}>{h}</li>)}
-            </ul>
-          </div>
         </div>
       </div>
 
