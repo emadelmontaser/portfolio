@@ -1,0 +1,27 @@
+# Node modules
+node_modules/
+
+# Next.js build output
+.next/
+
+# Local env files
+.env
+.env.local
+
+# Logs
+*.log
+
+# Vercel
+.vercel/
+
+# macOS
+.DS_Store
+
+# Optional npm debug
+npm-debug.log*
+
+# Dependencies
+node_modules/
+
+# Next.js build output
+.next/
