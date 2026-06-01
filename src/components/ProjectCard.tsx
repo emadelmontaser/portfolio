@@ -12,6 +12,11 @@ export default function ProjectCard({ project }: any) {
             <span key={t} className="text-xs px-2 py-1 bg-gray-900 border border-gray-800 rounded">{t}</span>
           ))}
         </div>
+        {project.demoVideoUrl ? (
+          <div className="mt-4 inline-flex items-center gap-2 text-xs font-medium text-accent">
+            <span className="inline-flex h-7 items-center justify-center rounded bg-white/5 px-3 py-1">Video</span>
+          </div>
+        ) : null}
       </div>
     </Link>
   )

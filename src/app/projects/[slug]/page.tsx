@@ -3,6 +3,12 @@ import Link from 'next/link'
 
 type Params = { params: { slug: string } }
 
+function getYoutubeEmbedUrl(url?: string) {
+  if (!url) return null
+  const match = url.match(/(?:youtu\.be\/|youtube\.com\/(?:watch\?v=|embed\/))([\w-]+)/)
+  return match ? `https://www.youtube.com/embed/${match[1]}` : null
+}
+
 export default function ProjectPage({ params }: Params) {
   const project = projects.find(p => p.slug === params.slug)
   if (!project) {
@@ -13,6 +19,8 @@ export default function ProjectPage({ params }: Params) {
       </div>
     )
   }
+
+  const demoEmbedUrl = getYoutubeEmbedUrl(project.demoVideoUrl)
 
   return (
     <div className="space-y-8">
@@ -54,6 +62,24 @@ export default function ProjectPage({ params }: Params) {
               <div className="w-full h-56 bg-gray-900 rounded flex items-center justify-center text-gray-500">No image</div>
             )}
           </div>
+
+          {demoEmbedUrl ? (
+            <div className="card">
+              <h2 className="text-xl font-semibold">Demo Video</h2>
+              <div className="mt-4 overflow-hidden rounded-lg border border-gray-800 bg-black">
+                <div className="relative aspect-[16/9]">
+                  <iframe
+                    className="absolute inset-0 w-full h-full"
+                    src={demoEmbedUrl}
+                    title={`${project.title} demo video`}
+                    frameBorder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowFullScreen
+                  />
+                </div>
+              </div>
+            </div>
+          ) : null}
 
           <div className="card">
             <h2 className="text-xl font-semibold">Tech stack</h2>

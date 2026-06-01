@@ -26,3 +26,39 @@ body {
 .card {
   @apply bg-charcoal border border-gray-800 rounded-lg p-6;
 }
+
+.floating-pill {
+  @apply inline-flex items-center rounded-full border border-gray-800 bg-gray-900 px-3 py-1 text-xs font-medium text-white shadow-sm;
+  animation: float 4s ease-in-out infinite alternate;
+}
+
+.floating-pill-delay-1 {
+  animation-delay: 0s;
+}
+
+.floating-pill-delay-2 {
+  animation-delay: 0.8s;
+}
+
+.floating-pill-delay-3 {
+  animation-delay: 1.6s;
+}
+
+.floating-pill-delay-4 {
+  animation-delay: 2.4s;
+}
+
+@keyframes float {
+  from {
+    transform: translateY(0px);
+  }
+  to {
+    transform: translateY(-4px);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .floating-pill {
+    animation: none;
+  }
+}
