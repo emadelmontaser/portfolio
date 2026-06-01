@@ -3,7 +3,7 @@ import Link from 'next/link'
 export default function Navbar() {
   return (
     <header className="border-b border-gray-900">
-      <div className="container flex items-center justify-between py-4">
+      <div className="site-container flex items-center justify-between py-4">
         <div className="text-lg font-semibold">Emad Elmontaser</div>
         <nav className="hidden md:flex gap-6 text-sm">
           <Link href="/" className="hover:text-accent">Home</Link>

@@ -14,7 +14,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
       <body>
         <div className="min-h-screen flex flex-col">
           <Navbar />
-          <main className="flex-1 container py-12">
+          <main className="flex-1 site-container py-12">
             {children}
           </main>
           <Footer />

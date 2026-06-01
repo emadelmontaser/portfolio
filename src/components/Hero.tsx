@@ -5,7 +5,7 @@ export default function Hero() {
     <div className="card flex flex-col lg:flex-row gap-6 items-stretch">
       <div className="lg:flex-1">
         <h1 className="text-3xl md:text-4xl font-bold">I build practical software projects.</h1>
-        <p className="text-muted mt-3">Computer Science student focused on full-stack apps, browser tools, and interactive visualizations.</p>
+        <p className="text-muted mt-3">Computer Science student focused on building clean, practical software across web apps, tools, and technical projects.</p>
 
         <div className="flex gap-2 flex-wrap mt-4">
           <span className="floating-pill floating-pill-delay-1">Web Apps</span>
