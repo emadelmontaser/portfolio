@@ -35,7 +35,9 @@ export default function Hero() {
 
       <div className="lg:w-96 flex-shrink-0 space-y-4">
         <div className="flex items-center gap-4">
-          <div className="w-20 h-20 rounded-full bg-gray-800 flex items-center justify-center text-xl font-semibold">EE</div>
+          <div className="relative h-20 w-20 overflow-hidden rounded-full border border-gray-700 bg-gray-900">
+            <img src="/profile.jpg" alt="Emad Elmontaser" className="h-full w-full object-cover" />
+          </div>
           <div className="text-sm text-muted">
             Emad Elmontaser
             <span className="block text-xs mt-1">Software Developer</span>
