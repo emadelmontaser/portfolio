@@ -31,7 +31,7 @@ export default function ProjectCard({ project }: ProjectCardProps) {
               ) : null}
             </div>
           </div>
-          <p className="text-sm text-muted mt-2 max-h-14 overflow-hidden">{project.description}</p>
+          <p className="text-sm text-muted mt-3 leading-6">{project.description}</p>
           <div className="flex gap-2 mt-3 flex-wrap">
             {project.techStack.slice(0, 4).map((t: string) => (
               <span key={t} className="text-xs px-2 py-1 bg-gray-900 border border-gray-800 rounded interactive-pill">{t}</span>

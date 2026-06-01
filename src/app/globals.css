@@ -109,10 +109,6 @@ html {
   text-shadow: 0 6px 18px rgba(0,0,0,0.6);
 }
 
-.card > a, .card a {
-  color: inherit;
-}
-
 .bg-charcoal {
   background-color: #0b0b0b;
 }
