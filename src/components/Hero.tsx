@@ -44,7 +44,7 @@ export default function Hero() {
 
       <Reveal className="lg:w-96 flex-shrink-0 space-y-4 reveal-delay-2">
         <div className="flex items-center gap-4 lg:flex-col lg:items-end">
-          <div className="relative h-40 w-40 md:h-48 md:w-48 overflow-hidden rounded-full border-2 border-gray-700 bg-gray-900 shadow-lg transition-transform duration-300 hover:scale-105 lg:-mt-12">
+          <div className="relative h-56 w-56 md:h-64 md:w-64 overflow-hidden rounded-full border-2 border-gray-700 bg-gray-900 shadow-lg transition-transform duration-300 hover:scale-105 lg:-mt-12">
             <img src="/profile.jpg" alt="Emad Elmontaser" className="h-full w-full object-cover" />
           </div>
           <div className="text-sm text-muted lg:text-right">

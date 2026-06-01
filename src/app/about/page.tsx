@@ -123,8 +123,9 @@ export default function AboutPage() {
               <span className="px-3 py-1.5 bg-gray-900 border border-gray-800 rounded">Next.js</span>
               <span className="px-3 py-1.5 bg-gray-900 border border-gray-800 rounded">TypeScript</span>
               <span className="px-3 py-1.5 bg-gray-900 border border-gray-800 rounded">Tailwind CSS</span>
-              <span className="px-3 py-1.5 bg-gray-900 border border-gray-800 rounded">Supabase</span>
               <span className="px-3 py-1.5 bg-gray-900 border border-gray-800 rounded">PostgreSQL</span>
+              <span className="px-3 py-1.5 bg-gray-900 border border-gray-800 rounded">MongoDB</span>
+              <span className="px-3 py-1.5 bg-gray-900 border border-gray-800 rounded">Supabase</span>
               <span className="px-3 py-1.5 bg-gray-900 border border-gray-800 rounded">Git</span>
               <span className="px-3 py-1.5 bg-gray-900 border border-gray-800 rounded">Vercel</span>
             </div>
