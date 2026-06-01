@@ -9,7 +9,7 @@ const projects = [
     highlights: ['Supabase authentication', 'Lead CRUD workflows', 'Deal pipeline stages', 'Dashboard metrics', 'Follow-up tracking', 'Protected user data'],
     image: '/projects/dealflow/thumbnail.png',
     screenshots: [],
-    liveDemo: '',
+    liveDemo: 'https://deal-flow-ruddy.vercel.app/',
     github: 'https://github.com/emadelmontaser/DealFlow',
     demoVideoUrl: 'https://youtu.be/AV4-lulkIbM'
   },
@@ -23,7 +23,7 @@ const projects = [
     highlights: ['Participant and item management', 'Editable assignments', 'Cost splitting', 'Copyable summaries', 'Browser storage persistence'],
     image: '/projects/splitcart/thumbnail.png',
     screenshots: [],
-    liveDemo: '',
+    liveDemo: 'https://split-cart-tau.vercel.app/',
     github: 'https://github.com/emadelmontaser/SplitCart',
     demoVideoUrl: 'https://youtu.be/Oor7Ig7dTW0'
   },
