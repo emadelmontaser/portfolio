@@ -42,18 +42,20 @@ export default function Hero() {
         </Reveal>
       </div>
 
-      <Reveal className="lg:w-96 flex-shrink-0 space-y-4 reveal-delay-2">
-        <div className="flex items-center gap-4 lg:flex-col lg:items-end">
-          <div className="relative h-56 w-80 md:h-64 md:w-96 overflow-hidden rounded-2xl border-2 border-gray-700 bg-gray-900 shadow-lg transition-transform duration-300 hover:scale-105 lg:-mt-12">
-            <img src="/emad.jpg" alt="Emad Elmontaser" className="h-full w-full object-cover" />
+      <Reveal className="lg:w-80 flex-shrink-0 space-y-4 reveal-delay-2">
+        {/* Profile row: image + name/title */}
+        <div className="flex items-center gap-3">
+          <div className="relative h-28 w-28 flex-shrink-0 overflow-hidden rounded-full border-2 border-gray-700 bg-gray-900 shadow-lg transition-transform duration-300 hover:scale-105">
+            <img src="/profile.jpg" alt="Emad Elmontaser" className="h-full w-full object-cover" />
           </div>
-          <div className="text-sm text-muted lg:text-right">
-            Emad Elmontaser
-            <span className="block text-xs mt-1">Software Developer</span>
+          <div className="text-sm text-muted">
+            <div className="font-semibold text-white">Emad Elmontaser</div>
+            <div className="text-xs mt-1">Software Developer</div>
           </div>
         </div>
 
-        <div className="bg-black border border-gray-800 rounded p-4 text-xs font-mono mt-3">
+        {/* Code terminal */}
+        <div className="bg-black border border-gray-800 rounded p-4 text-xs font-mono">
           <div className="flex gap-2 mb-3">
             <span className="w-2 h-2 bg-red-500 rounded-full"></span>
             <span className="w-2 h-2 bg-yellow-400 rounded-full"></span>
@@ -67,7 +69,7 @@ export default function Hero() {
 
 function build() {
   return "useful software";
-}`}
+}`}<span className="cursor-blink">|</span>
           </pre>
         </div>
       </Reveal>
