@@ -7,18 +7,18 @@ export default function ContactPage() {
       </div>
 
       <div className="card">
-        <div className="grid gap-4 sm:grid-cols-3">
+        <div className="grid gap-6 sm:grid-cols-3">
           <div>
             <h2 className="text-sm font-semibold">Email</h2>
-            <p className="text-muted mt-2">emad@example.com</p>
+            <a href="mailto:emadelmontaser1@gmail.com" className="text-muted mt-2 inline-block hover:text-white">emadelmontaser1@gmail.com</a>
           </div>
           <div>
             <h2 className="text-sm font-semibold">GitHub</h2>
-            <p className="text-muted mt-2">github.com/your-username</p>
+            <a href="https://github.com/emadelmontaser" target="_blank" rel="noreferrer" className="text-muted mt-2 inline-block hover:text-white">github.com/emadelmontaser</a>
           </div>
           <div>
             <h2 className="text-sm font-semibold">LinkedIn</h2>
-            <p className="text-muted mt-2">linkedin.com/in/your-profile</p>
+            <a href="https://www.linkedin.com/in/emadelmontaser/" target="_blank" rel="noreferrer" className="text-muted mt-2 inline-block hover:text-white">linkedin.com/in/emadelmontaser</a>
           </div>
         </div>
       </div>
