@@ -110,7 +110,11 @@ html {
 }
 
 .section-icon {
-  @apply flex h-11 w-11 items-center justify-center rounded-full border border-blue-950 bg-slate-950 text-slate-300 transition-colors duration-200;
+  @apply flex h-12 w-12 items-center justify-center rounded-full border border-blue-900 bg-slate-950 text-blue-400 transition-all duration-200 flex-shrink-0;
+}
+
+.section-icon svg {
+  @apply h-5 w-5;
 }
 
 .mini-bullet {
