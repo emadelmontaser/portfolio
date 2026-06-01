@@ -2,6 +2,7 @@ import './globals.css'
 import { ReactNode } from 'react'
 import Navbar from '../components/Navbar'
 import Footer from '../components/Footer'
+import PageContainer from '../components/PageContainer'
 
 export const metadata = {
   title: 'Emad Elmontaser — Software Developer',
@@ -14,8 +15,8 @@ export default function RootLayout({ children }: { children: ReactNode }) {
       <body>
         <div className="min-h-screen flex flex-col">
           <Navbar />
-          <main className="flex-1 site-container py-12">
-            {children}
+          <main className="flex-1 py-12">
+            <PageContainer>{children}</PageContainer>
           </main>
           <Footer />
         </div>
