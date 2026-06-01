@@ -53,6 +53,57 @@ html {
   animation-delay: 2.4s;
 }
 
+.interactive-pill {
+  transition: transform 250ms ease, border-color 250ms ease, color 250ms ease, background-color 250ms ease;
+}
+
+.interactive-pill:hover {
+  color: #7dd3fc;
+  border-color: #7dd3fc;
+  transform: translateY(-2px);
+}
+
+.reveal {
+  opacity: 0;
+  transform: translateY(24px);
+}
+
+.reveal.visible {
+  animation: reveal-fade 0.85s ease-out forwards;
+}
+
+.reveal-delay-1 {
+  animation-delay: 0.1s;
+}
+
+.reveal-delay-2 {
+  animation-delay: 0.25s;
+}
+
+.reveal-delay-3 {
+  animation-delay: 0.4s;
+}
+
+.reveal-delay-4 {
+  animation-delay: 0.55s;
+}
+
+.hover-lift {
+  transition: transform 250ms ease, box-shadow 250ms ease, border-color 250ms ease;
+}
+
+.hover-lift:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 22px 60px -40px rgba(255,255,255,0.35);
+}
+
+@keyframes reveal-fade {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 @keyframes float {
   from {
     transform: translateY(0px);
@@ -63,7 +114,11 @@ html {
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .floating-pill {
+  .floating-pill,
+  .reveal,
+  .interactive-pill,
+  .hover-lift {
     animation: none;
+    transition: none;
   }
 }

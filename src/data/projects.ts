@@ -10,7 +10,7 @@ const projects = [
     image: '/projects/dealflow/thumbnail.png',
     screenshots: [],
     liveDemo: '',
-    github: '',
+    github: 'https://github.com/emadelmontaser/DealFlow',
     demoVideoUrl: 'https://youtu.be/AV4-lulkIbM'
   },
   {
@@ -24,7 +24,7 @@ const projects = [
     image: '/projects/splitcart/thumbnail.png',
     screenshots: [],
     liveDemo: '',
-    github: '',
+    github: 'https://github.com/emadelmontaser/SplitCart',
     demoVideoUrl: 'https://youtu.be/Oor7Ig7dTW0'
   },
   {
@@ -38,7 +38,7 @@ const projects = [
     image: '/projects/windsor-parking-helper/thumbnail.png',
     screenshots: [],
     liveDemo: '',
-    github: '',
+    github: 'https://github.com/emadelmontaser/Windsor-Parking-Helper',
     demoVideoUrl: 'https://youtu.be/-DaLRtAdgPU'
   },
   {
@@ -52,7 +52,7 @@ const projects = [
     image: '/projects/pathfinding-visualizer/thumbnail.png',
     screenshots: [],
     liveDemo: 'https://pathfinding-visualizer-sage-seven.vercel.app/',
-    github: '',
+    github: 'https://github.com/emadelmontaser/pathfinding-visualizer',
     demoVideoUrl: 'https://youtu.be/VL9tutkHUCQ'
   }
 ]

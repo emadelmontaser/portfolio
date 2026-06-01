@@ -1,20 +1,28 @@
 import Link from 'next/link'
+import Reveal from './Reveal'
 
 export default function Hero() {
   return (
     <div className="card flex flex-col lg:flex-row gap-6 items-stretch">
       <div className="lg:flex-1">
-        <h1 className="text-3xl md:text-4xl font-bold">I build practical software projects.</h1>
-        <p className="text-muted mt-3">Computer Science student focused on building clean, practical software across web apps, tools, and technical projects.</p>
+        <Reveal className="reveal-delay-1">
+          <h1 className="text-3xl md:text-4xl font-bold">I build practical software projects.</h1>
+        </Reveal>
+        <Reveal className="reveal-delay-2">
+          <p className="text-muted mt-3">Computer Science student focused on building clean, practical software across web apps, tools, and technical projects.</p>
+        </Reveal>
 
-        <div className="flex gap-2 flex-wrap mt-4">
-          <span className="floating-pill floating-pill-delay-1">Web Apps</span>
-          <span className="floating-pill floating-pill-delay-2">AI/ML</span>
-          <span className="floating-pill floating-pill-delay-3">Full-Stack</span>
-          <span className="floating-pill floating-pill-delay-4">Algorithms</span>
-        </div>
+        <Reveal className="reveal-delay-3">
+          <div className="flex gap-2 flex-wrap mt-4">
+            <span className="floating-pill floating-pill-delay-1 interactive-pill">Web Apps</span>
+            <span className="floating-pill floating-pill-delay-2 interactive-pill">AI/ML</span>
+            <span className="floating-pill floating-pill-delay-3 interactive-pill">Full-Stack</span>
+            <span className="floating-pill floating-pill-delay-4 interactive-pill">Algorithms</span>
+          </div>
+        </Reveal>
 
-        <div className="flex flex-wrap items-center gap-3 mt-6">
+        <Reveal className="reveal-delay-4">
+          <div className="flex flex-wrap items-center gap-3 mt-6">
           <Link href="/projects" className="inline-flex items-center justify-center px-5 py-2 bg-white text-black rounded-md font-medium transition hover:bg-gray-100">View Projects</Link>
           <Link href="/resume" className="inline-flex items-center justify-center gap-2 px-4 py-2 border border-gray-700 rounded-md text-sm transition hover:border-accent">
             <span className="inline-flex items-center justify-center w-4 h-4">
@@ -31,11 +39,12 @@ export default function Hero() {
             </svg>
           </a>
         </div>
+        </Reveal>
       </div>
 
-      <div className="lg:w-96 flex-shrink-0 space-y-4">
+      <Reveal className="lg:w-96 flex-shrink-0 space-y-4 reveal-delay-2">
         <div className="flex items-center gap-4">
-          <div className="relative h-20 w-20 overflow-hidden rounded-full border border-gray-700 bg-gray-900">
+          <div className="relative h-28 w-28 overflow-hidden rounded-full border border-gray-700 bg-gray-900 shadow-lg transition-transform duration-300 hover:scale-105">
             <img src="/profile.jpg" alt="Emad Elmontaser" className="h-full w-full object-cover" />
           </div>
           <div className="text-sm text-muted">
@@ -61,7 +70,7 @@ function build() {
 }`}
           </pre>
         </div>
-      </div>
+      </Reveal>
     </div>
   )
 }

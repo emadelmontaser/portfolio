@@ -1,27 +1,48 @@
 import Link from 'next/link'
 
-export default function ProjectCard({ project }: any) {
+type ProjectCardProps = {
+  project: {
+    slug: string
+    title: string
+    description: string
+    image?: string
+    techStack: string[]
+    demoVideoUrl?: string
+    github?: string
+  }
+}
+
+export default function ProjectCard({ project }: ProjectCardProps) {
   return (
-    <Link href={`/projects/${project.slug}`} className="block border border-gray-800 rounded overflow-hidden hover:border-accent transition">
-      {project.image ? (
-        <img src={project.image} alt={`${project.title} thumbnail`} className="h-40 w-full object-cover" />
-      ) : (
-        <div className="w-full h-40 bg-gray-900 flex items-center justify-center text-gray-500">{project.title}</div>
-      )}
-      <div className="p-4 bg-charcoal">
-        <h3 className="font-semibold">{project.title}</h3>
-        <p className="text-sm text-muted mt-2 max-h-14 overflow-hidden">{project.description}</p>
-        <div className="flex gap-2 mt-3 flex-wrap">
-          {project.techStack.slice(0,4).map((t:string) => (
-            <span key={t} className="text-xs px-2 py-1 bg-gray-900 border border-gray-800 rounded">{t}</span>
-          ))}
-        </div>
-        {project.demoVideoUrl ? (
-          <div className="mt-4 inline-flex items-center gap-2 text-xs font-medium text-accent">
-            <span className="inline-flex h-7 items-center justify-center rounded bg-white/5 px-3 py-1">Video</span>
+    <div className="border border-gray-800 rounded overflow-hidden hover:border-accent transition hover-lift bg-charcoal">
+      <Link href={`/projects/${project.slug}`} className="block">
+        {project.image ? (
+          <img src={project.image} alt={`${project.title} thumbnail`} className="h-40 w-full object-cover" />
+        ) : (
+          <div className="w-full h-40 bg-gray-900 flex items-center justify-center text-gray-500">{project.title}</div>
+        )}
+        <div className="p-4">
+          <h3 className="font-semibold">{project.title}</h3>
+          <p className="text-sm text-muted mt-2 max-h-14 overflow-hidden">{project.description}</p>
+          <div className="flex gap-2 mt-3 flex-wrap">
+            {project.techStack.slice(0, 4).map((t: string) => (
+              <span key={t} className="text-xs px-2 py-1 bg-gray-900 border border-gray-800 rounded interactive-pill">{t}</span>
+            ))}
           </div>
-        ) : null}
-      </div>
-    </Link>
+          {project.demoVideoUrl ? (
+            <div className="mt-4 inline-flex items-center gap-2 text-xs font-medium text-accent">
+              <span className="inline-flex h-7 items-center justify-center rounded bg-white/5 px-3 py-1">Video</span>
+            </div>
+          ) : null}
+        </div>
+      </Link>
+      {project.github ? (
+        <div className="p-4 border-t border-gray-800 bg-black/20">
+          <a href={project.github} target="_blank" rel="noreferrer" className="inline-flex items-center gap-2 text-xs font-medium text-accent hover:text-white hover:border-white border border-transparent rounded px-2 py-1 transition">
+            GitHub repo
+          </a>
+        </div>
+      ) : null}
+    </div>
   )
 }
