@@ -10,7 +10,7 @@ const projects = [
     image: '/projects/dealflow/thumbnail.png',
     screenshots: [],
     liveDemo: 'https://deal-flow-ruddy.vercel.app/',
-    github: 'https://github.com/emadelmontaser/DealFlow',
+    github: 'https://github.com/emadelmontaser/client-pipeline-tracker',
     demoVideoUrl: 'https://youtu.be/AV4-lulkIbM'
   },
   {
